@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS XYZ_DB;
+USE XYZ_DB;
+
+CREATE TABLE IF NOT EXISTS employee_info(
+	ID INT PRIMARY KEY,
+    NAME VARCHAR(50),
+    SALARY INT
+);
+
+INSERT INTO employee_info
+(ID, NAME, SALARY)
+VALUES
+(1, "adam", 25000),
+(2, "bob", 30000),
+(3, "casey", 40000);
+
+SELECT * FROM employee_info;
